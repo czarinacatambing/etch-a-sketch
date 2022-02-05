@@ -1,0 +1,19 @@
+.box {
+    background-color: grey;
+    opacity: 0;
+    transition: 0s 180s; /* stays for 3 mins */
+}
+
+.box:hover {
+    opacity:1;
+    transition:0s;
+}
+
+/*kill the transitions on any descendant elements of .notransition*/
+.notransition * { 
+    -webkit-transition: none !important; 
+    -moz-transition: none !important; 
+    -o-transition: none !important; 
+    -ms-transition: none !important; 
+    transition: none !important; 
+  } 
