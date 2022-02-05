@@ -1,6 +1,6 @@
 const body = document.querySelector('body');
 const container = document.createElement('div');
-const clear = document.querySelector('button')
+const clearBtn = document.querySelector('button')
 container.setAttribute('style','display: flex;  flex-direction: column; height: 800px; width:1850px; border-style: solid; border-width:.2 ')
 
 for(let i=0; i<45; i++){
@@ -22,7 +22,7 @@ for(let i=0; i<45; i++){
 
 body.appendChild(container)
 
-clear.addEventListener('click', () => {
+clearBtn.addEventListener('click', () => {
     // https://stackoverflow.com/questions/37439605/restart-reset-and-replay-a-transition-css/37448517
     // https://stackoverflow.com/questions/11131875/what-is-the-cleanest-way-to-disable-css-transition-effects-temporarily
 
